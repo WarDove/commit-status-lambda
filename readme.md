@@ -1,27 +1,27 @@
-
+## Required IAM policies for lambda
 
 ```json
   {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "VisualEditor0",
-            "Effect": "Allow",
-            "Action": [
-                "codepipeline:ListActionExecutions",
-                "codepipeline:GetPipelineExecution"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Sid": "",
-            "Effect": "Allow",
-            "Action": [
-                "ssm:GetParameters"
-            ],
-            "Resource": "arn:aws:ssm:region:account_id:parameter/parameter_name"
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "codepipeline:ListActionExecutions",
+        "codepipeline:GetPipelineExecution"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "",
+      "Effect": "Allow",
+      "Action": [
+        "ssm:GetParameters"
+      ],
+      "Resource": "arn:aws:ssm:region:account_id:parameter/parameter_name"
+    }
+  ]
 }
 ```
 Note: default labmda policies for logging are also needed
