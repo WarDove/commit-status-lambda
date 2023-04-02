@@ -1,3 +1,6 @@
+# Description
+This lambda written in Golang interacts with "Commit Status REST API" to update pipeline status visually in Github.
+
 ## Required IAM policies for lambda
 
 ```json
