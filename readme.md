@@ -46,3 +46,7 @@ Note: default labmda policies for logging are also needed
   ]
 }
 ```
+## ParameterStore secret
+```golang
+githubToken, err := getParam("/wardove/GITHUB_TOKEN")
+```
