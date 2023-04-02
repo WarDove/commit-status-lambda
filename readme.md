@@ -48,5 +48,7 @@ Note: default labmda policies for logging are also needed
 ```
 ## ParameterStore secret
 ```golang
+// Github classic token with  repo:status permission is generated and the value stored in parameterstore
+// You can add the name for this parameter as lambda environment variable instead of setting it directly
 githubToken, err := getParam("/wardove/GITHUB_TOKEN")
 ```
